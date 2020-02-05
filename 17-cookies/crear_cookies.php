@@ -6,20 +6,38 @@
 
 //setcookie("nombre", "valor que solo puede ser texto", caducidad, ruta, dominio);
 
-//Cookie Básica-
+//Cookie Básica- setcookie("nombre","valor en texto", caducidad, ruta, dominio);
 setcookie("micookie","AQUI TIENES TU GALLETA");
+
 
 
 //Cookie con expiracion
 
-setcookie("unyear","valor de mi cookie de 365 dias", time()+(60*60*24*365));
+//setcookie("unyear","valor de mi cookie de 365 dias", time()+(60*60*24*365)); valor para 1 año
+
+setcookie("unminuto","valor de mi cookie de 1 minuto, transcurrido este minuto esta frase se borrará", time()+(60)); //valor para 60 segundos
 
 
 
-
+header('Location:ver_cookies.php');//cambia la url de la pagina y me redirecciona a otro sitio.
 
 
 
 ?>
 
-<a href="ver_cookies.php">Ver las Galletas</a>
+ 
+
+<?php 
+echo "<br>";
+echo "<br>";
+ 
+
+
+?>
+<!-- al pulsar aqui creas las cookies-->
+
+
+<!-- al pulsar aqui borras las cookies-->
+
+
+

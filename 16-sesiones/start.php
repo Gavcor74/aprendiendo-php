@@ -14,7 +14,8 @@
  //Variable LOCAL
  $variable_normal="Soy una cadena de texto";
 //Variable de SESION
- $_SESSION['variable_persistente']="HOLA SOY UNA SESION ACTIVA";
+ $_SESSION['variable_persistente']="HOLA SOY UNA SESION ACTIVA, ahora bien, si entras en
+ la pagina1 despues de pasar por la pagina 'logout' veras que la sesión queda cerrada";
 
 
  echo $variable_normal;
