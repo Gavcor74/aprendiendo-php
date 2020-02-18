@@ -28,7 +28,7 @@ if(isset($_GET['error'])){
         echo '<strong style="color:red">Introduce el email en el formulario de forma correcta</strong>';
     }
     if($error =='pass'){
-        echo '<strong style="color:red">Introduce la contraseña en el formulario de forma correcta</strong>';
+        echo '<strong style="color:red">Introduce una contraseña de menos de cinco letras en el formulario.</strong>';
     }
 }
 ?>
